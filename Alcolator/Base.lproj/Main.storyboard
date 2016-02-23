@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlV-XO-Ype">
-                                <rect key="frame" x="272" y="104" width="57" height="29"/>
+                                <rect key="frame" x="257" y="104" width="57" height="29"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
                                 <state key="normal" title="Calculate">
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.47210217198581561" colorSpace="calibratedRGB"/>
@@ -29,7 +29,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="% Alcohol Content Per Beer" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1fp-zY-Rbu">
-                                <rect key="frame" x="20" y="28" width="560" height="30"/>
+                                <rect key="frame" x="5" y="28" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -37,12 +37,12 @@
                                 </connections>
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="qXu-MY-dK7">
-                                <rect key="frame" x="18" y="66" width="564" height="31"/>
+                                <rect key="frame" x="3" y="66" width="564" height="31"/>
                                 <connections>
                                     <action selector="sliderValueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="TdX-2d-C2F"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWM-9W-Vm5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWM-9W-Vm5">
                                 <rect key="frame" x="20" y="141" width="560" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -56,14 +56,18 @@
                             <constraint firstItem="hWM-9W-Vm5" firstAttribute="top" secondItem="MlV-XO-Ype" secondAttribute="bottom" constant="8" id="5dX-Ia-DNP"/>
                             <constraint firstItem="qXu-MY-dK7" firstAttribute="top" secondItem="1fp-zY-Rbu" secondAttribute="bottom" constant="8" id="8VC-yv-5cw"/>
                             <constraint firstItem="qXu-MY-dK7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="91B-fz-K3p"/>
+                            <constraint firstItem="hWM-9W-Vm5" firstAttribute="trailing" secondItem="MlV-XO-Ype" secondAttribute="trailing" constant="15" id="BYq-XW-3s4"/>
                             <constraint firstItem="MlV-XO-Ype" firstAttribute="top" secondItem="qXu-MY-dK7" secondAttribute="bottom" constant="8" id="L9W-Tm-G9k"/>
                             <constraint firstItem="1fp-zY-Rbu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Lof-t7-g1F"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="1fp-zY-Rbu" secondAttribute="leading" id="NcN-De-0Hl"/>
+                            <constraint firstItem="hWM-9W-Vm5" firstAttribute="trailing" secondItem="MlV-XO-Ype" secondAttribute="trailing" id="MLu-rO-TD0"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="1fp-zY-Rbu" secondAttribute="leading" constant="15" id="NcN-De-0Hl"/>
+                            <constraint firstItem="hWM-9W-Vm5" firstAttribute="leading" secondItem="MlV-XO-Ype" secondAttribute="leading" constant="15" id="TZq-u3-Fa7"/>
                             <constraint firstItem="qXu-MY-dK7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="WbS-Xt-cZW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1fp-zY-Rbu" secondAttribute="trailing" id="Xdg-Gd-Zza"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1fp-zY-Rbu" secondAttribute="trailing" constant="15" id="Xdg-Gd-Zza"/>
                             <constraint firstItem="hWM-9W-Vm5" firstAttribute="leading" secondItem="1fp-zY-Rbu" secondAttribute="leading" id="Zqy-hB-SHC"/>
                             <constraint firstItem="qXu-MY-dK7" firstAttribute="centerX" secondItem="1fp-zY-Rbu" secondAttribute="centerX" id="ayz-fU-TZ9"/>
                             <constraint firstItem="qXu-MY-dK7" firstAttribute="width" secondItem="1fp-zY-Rbu" secondAttribute="width" id="dSY-oz-tK2"/>
+                            <constraint firstItem="hWM-9W-Vm5" firstAttribute="leading" secondItem="MlV-XO-Ype" secondAttribute="leading" id="fZK-Nt-Xgo"/>
                             <constraint firstItem="hWM-9W-Vm5" firstAttribute="trailing" secondItem="1fp-zY-Rbu" secondAttribute="trailing" id="i0H-W2-Zt6"/>
                             <constraint firstItem="MlV-XO-Ype" firstAttribute="centerX" secondItem="qXu-MY-dK7" secondAttribute="centerX" id="p1e-aZ-9Ci"/>
                         </constraints>
@@ -71,6 +75,10 @@
                             <mask key="constraints">
                                 <exclude reference="91B-fz-K3p"/>
                                 <exclude reference="WbS-Xt-cZW"/>
+                                <exclude reference="MLu-rO-TD0"/>
+                                <exclude reference="Zqy-hB-SHC"/>
+                                <exclude reference="fZK-Nt-Xgo"/>
+                                <exclude reference="i0H-W2-Zt6"/>
                             </mask>
                         </variation>
                         <connections>
@@ -129,7 +137,7 @@
                                     <action selector="sliderValueDidChange:" destination="PG8-6G-Hge" eventType="valueChanged" id="7r9-AP-ROe"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3J-A2-25P">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3J-A2-25P">
                                 <rect key="frame" x="20" y="141" width="560" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -147,17 +155,21 @@
                             <constraint firstItem="sbl-jq-oXQ" firstAttribute="width" secondItem="PqK-an-hbR" secondAttribute="width" id="H4G-kA-kT6"/>
                             <constraint firstItem="T3J-A2-25P" firstAttribute="top" secondItem="MBP-Z2-gsB" secondAttribute="bottom" constant="8" id="JSJ-h3-xer"/>
                             <constraint firstAttribute="leadingMargin" secondItem="PqK-an-hbR" secondAttribute="leading" id="LKS-EL-qv0"/>
+                            <constraint firstItem="T3J-A2-25P" firstAttribute="leading" secondItem="MBP-Z2-gsB" secondAttribute="leading" constant="15" id="YUC-jW-D2M"/>
                             <constraint firstItem="T3J-A2-25P" firstAttribute="trailing" secondItem="PqK-an-hbR" secondAttribute="trailing" id="aQM-uH-6GR"/>
                             <constraint firstItem="PqK-an-hbR" firstAttribute="top" secondItem="FEf-xS-PWV" secondAttribute="bottom" constant="8" id="biq-Bn-M4t"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PqK-an-hbR" secondAttribute="trailing" id="dUg-kB-c5J"/>
                             <constraint firstItem="T3J-A2-25P" firstAttribute="leading" secondItem="PqK-an-hbR" secondAttribute="leading" id="dt1-gt-bwS"/>
                             <constraint firstItem="sbl-jq-oXQ" firstAttribute="top" secondItem="PqK-an-hbR" secondAttribute="bottom" constant="8" id="eD4-4F-Roq"/>
                             <constraint firstItem="sbl-jq-oXQ" firstAttribute="centerY" secondItem="ycm-Vs-aiy" secondAttribute="centerY" id="gwX-GO-Kbw"/>
+                            <constraint firstItem="T3J-A2-25P" firstAttribute="trailing" secondItem="MBP-Z2-gsB" secondAttribute="trailing" constant="15" id="rYb-3i-PNC"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="2lT-Iy-exI"/>
                                 <exclude reference="gwX-GO-Kbw"/>
+                                <exclude reference="aQM-uH-6GR"/>
+                                <exclude reference="dt1-gt-bwS"/>
                             </mask>
                         </variation>
                     </view>
