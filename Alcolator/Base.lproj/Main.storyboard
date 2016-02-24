@@ -77,6 +77,7 @@
                             <outletCollection property="gestureRecognizers" destination="mmx-At-p9a" appends="YES" id="N9x-z1-6QF"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" title="Wine" id="Mpq-d5-3Fo"/>
                     <connections>
                         <outlet property="beerCountSlider" destination="qXu-MY-dK7" id="k0f-nN-Ry8"/>
                         <outlet property="beerPercentTextField" destination="1fp-zY-Rbu" id="ktO-Cq-VAN"/>
@@ -95,7 +96,7 @@
         <!--Whiskey-->
         <scene sceneID="Na4-gC-szt">
             <objects>
-                <viewController title="Whiskey" id="PG8-6G-Hge" customClass="WhiskeyViewController" sceneMemberID="viewController">
+                <viewController id="PG8-6G-Hge" customClass="WhiskeyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FEf-xS-PWV"/>
                         <viewControllerLayoutGuide type="bottom" id="4FO-uy-StV"/>
@@ -160,6 +161,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Whiskey" id="XOj-f9-Qzs"/>
                     <connections>
                         <outlet property="beerCountSlider" destination="sbl-jq-oXQ" id="SRa-Vh-8O9"/>
                         <outlet property="beerPercentTextField" destination="PqK-an-hbR" id="6gw-6E-700"/>
